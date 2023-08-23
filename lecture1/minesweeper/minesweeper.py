@@ -278,7 +278,6 @@ class MinesweeperAI():
 
         # Verify if new_sentence is a subset of another sentence that already exists in the self.knowledge
         # Use of issubset() -> after create a new Sentence and append
-        # Checar se new_sentence e sentence tem minas
 
         for sentence in self.knowledge:
             if new_sentence.cells.issubset(sentence.cells) and sentence.count > 0 and new_sentence.count > 0 and new_sentence != sentence:
